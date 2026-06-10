@@ -1,18 +1,8 @@
-import urllib.request
 import joblib
 import streamlit as st
 import pandas as pd
 
-@st.cache_resource
-def load_model():
-    model_url = "https://raw.githubusercontent.com/dionsylvester/batteryRUL/main/battery_rul_model.pkl"
-    model_path = "battery_rul_model.pkl"
-    
-    urllib.request.urlretrieve(model_url, model_path)
-        
-    return joblib.load(model_path)
-
-model = load_model()
+model = joblib.load("battery_rul_model.pkl")
 
 # Run: streamlit run app.py
 
