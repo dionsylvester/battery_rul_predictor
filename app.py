@@ -3,6 +3,7 @@ import joblib
 import os
 import streamlit as st
 import pandas as pd
+import sklearn
 
 @st.cache_resource
 def load_model():
