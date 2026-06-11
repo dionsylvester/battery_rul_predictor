@@ -175,7 +175,7 @@ with st.expander("View Model Insights"):
     st.markdown("The scatter plot comparing the predicted versus actual Remaining Useful Life values:")
     
     try:
-        st.image("results\scatterplot_gradient_boosting.png", caption="Scatter Plot of Gradient Boosting", use_container_width=True)
+        st.image("results/scatterplot_gradient_boosting.png", caption="Scatter Plot of Gradient Boosting", use_container_width=True)
     except:
         st.warning("Scatter plot image file not found.")
 
