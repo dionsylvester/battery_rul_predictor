@@ -76,7 +76,7 @@ def show_splash_screen():
 
     if st.session_state["show_about"]:
         st.markdown("---")
-        st.subheader("Abstract")
+        st.subheader("Overview")
         st.markdown(
             """
             Battery degradation has become a crucial challenge to environmental safety and energy management systems due to the limited lifespan of lithium-ion batteries and their improper handling. This project aims to develop lightweight machine learning models to estimate the remaining useful life (RUL) of lithium-ion batteries, aligning with SDG 7 (Affordable and Clean Energy) and SDG 12 (Responsible Consumption and Production) to support responsible battery usage. We implement and compare five regression models to predict battery RUL, such as Gradient Boosting, XGBoost, Random Forest, Decision Tree, and Polynomial Regression. Among these, the Gradient Boosting model demonstrates the superior performance and is thus deployed in this predictor.
